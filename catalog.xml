@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE catalog SYSTEM "catalog.dtd">
+<catalog>
+  <llista_actors>
+    <actor id="a1">
+      <nom>John Doe</nom>
+      <edat>35</edat>
+    </actor>
+    <actor id="a2">
+      <nom>Jane Smith</nom>
+      <edat>28</edat>
+    </actor>
+    <actor id="a3">
+      <nom>Chris Johnson</nom>
+    </actor>
+  </llista_actors>
+
+  <llista_pelicules>
+    <pelicula id="p1">
+      <titol idioma="en">The Adventure</titol>
+      <director>Robert Brown</director>
+      <any>2020</any>
+      <actors>
+        <actor_ref ref="a1"/>
+        <actor_ref ref="a2"/>
+      </actors>
+    </pelicula>
+    <pelicula id="p2">
+      <titol idioma="es">La Aventura</titol>
+      <director>Maria Lopez</director>
+      <any>2021</any>
+      <actors>
+        <actor_ref ref="a2"/>
+        <actor_ref ref="a3"/>
+      </actors>
+    </pelicula>
+    <pelicula id="p3">
+      <titol idioma="fr">L'Aventure</titol>
+      <director>Jean Dupont</director>
+      <any>2022</any>
+      <actors>
+        <actor_ref ref="a1"/>
+        <actor_ref ref="a3"/>
+      </actors>
+    </pelicula>
+  </llista_pelicules>
+
+  <llista_recomanacions_pelicules>
+    <recomanacio ref="p1"/>
+    <recomanacio ref="p2"/>
+  </llista_recomanacions_pelicules>
+</catalog>
